@@ -1,14 +1,16 @@
 module.exports = ({ env }) => ({
   connection: {
-    client: 'postgres',
+    client: env("DB_CLIENT", "sqlite"),
     connection: {
-      host: env('PGHOST', '127.0.0.1'),
-      port: env.int('PGPORT', 5432),
-      database: env('PGDATABASE', 'strapi'),
-      user: env('PGUSER', 'strapi'),
-      password: env('PGPASSWORD', 'password'),
-      ssl: env.bool(true),
+      host: env("DB_HOST", "127.0.0.1"),
+      port: env.int("DB_PORT", 5432),
+      database: env("DB_DATABASE", "strapi"),
+      user: env("DB_USER", "strapi"),
+      password: env("DB_PASSWORD", "password"),
+      ssl: {
+        rejectUnauthorized: false,
+      },
     },
-    pool: { min: 0 }
+    pool: { min: 0 },
   },
 });

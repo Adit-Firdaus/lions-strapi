@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_user_images",
+  "info": {
+    "displayName": "Achievement",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "dateTime": {
+      "type": "date"
+    }
+  }
+}

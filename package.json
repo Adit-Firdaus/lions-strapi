@@ -1,30 +1,31 @@
 {
-  "name": "strapi",
+  "name": "lions_strapi",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
-    "@strapi/plugin-i18n": "4.5.5",
-    "@strapi/plugin-users-permissions": "4.5.5",
-    "@strapi/provider-upload-cloudinary": "4.5.5",
-    "@strapi/strapi": "4.5.5",
-    "pg": "8.8.0"
+    "@strapi/plugin-i18n": "4.10.2",
+    "@strapi/plugin-users-permissions": "4.10.2",
+    "@strapi/provider-email-nodemailer": "^4.10.2",
+    "@strapi/provider-upload-aws-s3": "^4.10.2",
+    "@strapi/strapi": "4.10.2",
+    "pg": "^8.8.0",
+    "strapi-plugin-populate-deep": "^2.0.0",
+    "strapi-utils": "^3.6.11"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "HiKlik"
   },
   "strapi": {
-    "uuid": "35d7a084-3088-4d0b-869e-f503693ee8e5"
+    "uuid": "5547691c-b0dd-4f6f-82ad-3f59dd79c688"
   },
   "engines": {
-    "node": ">=16.x.x",
+    "node": ">=14.19.1 <=18.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"

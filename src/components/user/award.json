@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_user_awards",
+  "info": {
+    "displayName": "Award",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "club": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::club.club"
+    },
+    "dateTime": {
+      "type": "string"
+    }
+  }
+}

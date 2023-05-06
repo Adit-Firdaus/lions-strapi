@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_user_socials",
+  "info": {
+    "displayName": "Social",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "instagram": {
+      "type": "string"
+    }
+  }
+}
