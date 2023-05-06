@@ -29,6 +29,13 @@
     },
     "donationAccount": {
       "type": "string"
+    },
+    "coverImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
