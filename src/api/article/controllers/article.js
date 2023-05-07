@@ -6,10 +6,4 @@
 
 const { createCoreController } = require("@strapi/strapi").factories;
 
-module.exports = createCoreController("api::article.article", ({ strapi }) => ({
-  async find(ctx) {
-    return await strapi.entityService.findMany("api::article.article", {
-      populate: "*",
-    });
-  },
-}));
+module.exports = createCoreController("api::article.article");
