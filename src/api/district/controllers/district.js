@@ -1,16 +1,16 @@
 "use strict";
 
 /**
- * location controller
+ * district controller
  */
 
 const { createCoreController } = require("@strapi/strapi").factories;
 
 module.exports = createCoreController(
-  "api::location.location",
+  "api::district.district",
   ({ strapi }) => ({
     async find(ctx) {
-      return await strapi.entityService.findMany("api::location.location", {
+      return await strapi.entityService.findMany("api::district.district", {
         populate: "*",
       });
     },

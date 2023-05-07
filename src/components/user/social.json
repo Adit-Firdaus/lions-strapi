@@ -6,8 +6,16 @@
   },
   "options": {},
   "attributes": {
-    "instagram": {
+    "platform": {
       "type": "string"
+    },
+    "user": {
+      "type": "string"
+    },
+    "visible": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }

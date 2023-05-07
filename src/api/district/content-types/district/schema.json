@@ -1,9 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "jobs",
+  "collectionName": "districts",
   "info": {
-    "singularName": "job",
-    "pluralName": "jobs",
+    "singularName": "district",
+    "pluralName": "districts",
     "displayName": "District",
     "description": ""
   },

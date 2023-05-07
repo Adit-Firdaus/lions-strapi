@@ -82,7 +82,7 @@
     "districts": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::job.job",
+      "target": "api::district.district",
       "inversedBy": "users"
     },
     "clubs": {
@@ -109,7 +109,7 @@
     },
     "social": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "user.social"
     },
     "trainings": {
