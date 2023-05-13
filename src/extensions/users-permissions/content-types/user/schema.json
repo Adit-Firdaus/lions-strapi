@@ -76,16 +76,13 @@
     "address": {
       "type": "text"
     },
-    "phone": {
-      "type": "string"
-    },
-    "districts": {
+    "district": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::district.district",
       "inversedBy": "users"
     },
-    "clubs": {
+    "club": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::club.club",
@@ -120,11 +117,13 @@
     "memberID": {
       "type": "string"
     },
-    "rank": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::member-rank.member-rank",
-      "inversedBy": "users"
+    "about": {
+      "type": "text"
+    },
+    "phone": {
+      "type": "component",
+      "repeatable": false,
+      "component": "user.social"
     }
   }
 }

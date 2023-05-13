@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * member-rank router
+ * rank router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::member-rank.member-rank');
+module.exports = createCoreRouter('api::rank.rank');
