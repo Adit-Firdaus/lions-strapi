@@ -17,7 +17,7 @@
     },
     "users": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "plugin::users-permissions.user",
       "mappedBy": "district"
     }

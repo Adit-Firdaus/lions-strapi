@@ -78,13 +78,13 @@
     },
     "district": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::district.district",
       "inversedBy": "users"
     },
     "club": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::club.club",
       "inversedBy": "users"
     },
