@@ -124,6 +124,12 @@
       "type": "component",
       "repeatable": false,
       "component": "user.social"
+    },
+    "rank": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::rank.rank",
+      "inversedBy": "users"
     }
   }
 }
