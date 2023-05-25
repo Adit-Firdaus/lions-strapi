@@ -104,7 +104,7 @@
       "repeatable": true,
       "component": "user.image"
     },
-    "social": {
+    "socials": {
       "type": "component",
       "repeatable": true,
       "component": "user.social"
@@ -120,16 +120,14 @@
     "about": {
       "type": "text"
     },
-    "phone": {
-      "type": "component",
-      "repeatable": false,
-      "component": "user.social"
-    },
     "rank": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::rank.rank",
       "inversedBy": "users"
+    },
+    "phone": {
+      "type": "string"
     }
   }
 }
