@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * rank router
+ * position router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::rank.rank');
+module.exports = createCoreRouter('api::position.position');

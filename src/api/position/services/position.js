@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * rank service
+ * position service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::rank.rank');
+module.exports = createCoreService('api::position.position');

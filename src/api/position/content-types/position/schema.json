@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "ranks",
+  "collectionName": "positions",
   "info": {
-    "singularName": "rank",
-    "pluralName": "ranks",
-    "displayName": "Rank"
+    "singularName": "position",
+    "pluralName": "positions",
+    "displayName": "Position"
   },
   "options": {
     "draftAndPublish": true
@@ -18,7 +18,7 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "plugin::users-permissions.user",
-      "mappedBy": "rank"
+      "mappedBy": "position"
     }
   }
 }

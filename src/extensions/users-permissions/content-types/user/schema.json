@@ -120,14 +120,14 @@
     "about": {
       "type": "text"
     },
-    "rank": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::rank.rank",
-      "inversedBy": "users"
-    },
     "phone": {
       "type": "string"
+    },
+    "position": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::position.position",
+      "inversedBy": "users"
     }
   }
 }

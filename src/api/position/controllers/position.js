@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * rank controller
+ * position controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::rank.rank');
+module.exports = createCoreController('api::position.position');
